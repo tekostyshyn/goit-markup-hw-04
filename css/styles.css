@@ -144,6 +144,11 @@ img {
 
 /* contacts header */
 
+.contacts .icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .contacts {
   display: flex;
   margin-left: auto;
@@ -158,6 +163,9 @@ img {
 }
 
 .contacts-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -178,7 +186,13 @@ img {
 .hero {
   padding: 200px 0px;
 
-  background-color: var(--bgd-color-accent);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ), url(../images/hero-bgd.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
   text-align: center;
 }
 
@@ -231,7 +245,17 @@ img {
   margin-right: 0;
 }
 
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bgd-color-section);
+  width: 270px;
+  height: 120px;
+}
+
 .features-subtitle {
+  margin-top: 30px;
   color: var(--primary-color);
   text-transform: uppercase;
 
