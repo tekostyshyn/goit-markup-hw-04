@@ -254,6 +254,11 @@ img {
   height: 120px;
 }
 
+.features .icon {
+  width: 70px;
+  height: 70px
+}
+
 .features-subtitle {
   margin-top: 30px;
   color: var(--primary-color);
