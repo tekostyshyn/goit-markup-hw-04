@@ -569,6 +569,12 @@ address {
   background-color: var(--primary-white-color);
 }
 
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-container {
   padding: 20px 24px;
   border-left: solid 1px #eeeeee;
