@@ -7,6 +7,7 @@
   --bgd-color-section: #f5f4fa;
   --bgd-color-accent: #2f303a;
   --icon-primary-color: #afb1b8;
+  --icon-background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* general */
@@ -421,6 +422,11 @@ img {
   background-color: var(--bgd-color-accent);
 }
 
+.footer .container {
+  display: flex;
+  gap: 70px;
+}
+
 /* footer logo */
 .footer-logo {
   color: var(--primary-white-color);
@@ -465,6 +471,45 @@ address {
 .address-map:hover,
 .address-map:focus {
   color: var(--accent-color);
+}
+
+/* footer socials */
+
+.socials-box {
+  padding-top: 12px;
+}
+
+.text-socials {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.socials-list-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  fill: var(--primary-white-color);
+  background-color: var(--icon-background-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+  fill: var(--primary-white-color);
 }
 
 /*  section portfolio */
