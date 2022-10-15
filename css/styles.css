@@ -194,6 +194,8 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bgd.jpeg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   text-align: center;
 }
 
@@ -360,12 +362,17 @@ img {
   gap: 10px;
 }
 
+.socials-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 
   fill: var(--icon-primary-color);
@@ -394,12 +401,17 @@ img {
   gap: 30px;
 }
 
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+}
+
 .client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   fill: var(--icon-primary-color);
   border: 1px solid var(--icon-primary-color);
   border-radius: 4px;
@@ -426,6 +438,7 @@ img {
 .footer .container {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 
 /* footer logo */
@@ -476,10 +489,6 @@ address {
 
 /* footer socials */
 
-.socials-box {
-  padding-top: 12px;
-}
-
 .text-socials {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -499,8 +508,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 
   fill: var(--primary-white-color);
@@ -552,6 +561,9 @@ address {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
 .card-set {
@@ -570,17 +582,18 @@ address {
   background-color: var(--primary-white-color);
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
 .portfolio-container {
   padding: 20px 24px;
   border-left: solid 1px #eeeeee;
   border-right: solid 1px #eeeeee;
   border-bottom: solid 1px #eeeeee;
+}
+
+.portfolio-card .link:hover,
+.portfolio-card .link:focus {
+  display: block;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-subtitle {
